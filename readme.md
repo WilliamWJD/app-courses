@@ -1,7 +1,7 @@
 <h1 align="center">Fitness App</h1>
 
 ## 💻 O Projeto
-Projeto desenvolvido para praticar minhas habilidades React Native.
+Projeto desenvolvido para praticar minhas habilidades React Native, flexbox, css.
 
 <h1 align="center" class="teste">
   <img src="./images/img1.jpeg" width=250/>
@@ -10,7 +10,7 @@ Projeto desenvolvido para praticar minhas habilidades React Native.
 
 
 ## Design
-Design feito por [Behnaz Omidvar](https://dribbble.com/shots/9651346-Personal-Training-App/attachments/1679827?mode=media) 
+Design feito por [Shahin Srowar](https://dribbble.com/shots/14589943-Online-Course) 
 
 ## 🤔 Como contribuir
 
