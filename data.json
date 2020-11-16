@@ -1,0 +1,26 @@
+[
+    {
+        "title":"React Native Development",
+        "background":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
+        "background_color":"#2980b9",
+        "last_view":true
+    },
+    {
+        "title":"SO Marketing",
+        "background":"https://principionegocio.com/wp-content/uploads/2019/10/seo-search-engine-optimization.png",
+        "background_color":"#e67e22",
+        "last_view":false
+    },
+    {
+        "title":"Java Development",
+        "background":"https://upload.wikimedia.org/wikipedia/pt/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png",
+        "background_color":"#e74c3c",
+        "last_view":false
+    },
+    {
+        "title":"NodeJS Development",
+        "background":"https://media.bitdegree.org/storage/media/images/2018/12/node-js-interview-questions-logo-2-266x300.png",
+        "background_color":"#2ecc71",
+        "last-view":false
+    }
+]
