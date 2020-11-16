@@ -1,4 +1,4 @@
-<h1 align="center">Fitness App</h1>
+<h1 align="center">App Courses</h1>
 
 ## 💻 O Projeto
 Projeto desenvolvido para praticar minhas habilidades React Native, flexbox, css.
