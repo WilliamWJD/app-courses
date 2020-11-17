@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useNavigation } from '@react-navigation/native';
 
 import { Feather } from '@expo/vector-icons'
 
@@ -28,6 +29,15 @@ import { ScrollView } from 'react-native';
 import data from '../../../data.json';
 
 const Main: React.FC = () => {
+    const [lastCourse, setLastCourse] = useState()
+
+    const navigation = useNavigation();
+
+    useEffect(()=>{
+        const response = data.find(item=>item.last_view)
+        setLastCourse(response)
+    },[])
+
     return (
         <Container>
             <Profile>
@@ -47,10 +57,10 @@ const Main: React.FC = () => {
             <ScrollView showsVerticalScrollIndicator={false}>
                 <LastCourse>
                     <LastCourseTitle>
-                        React Native Development
+                        {lastCourse.title}
                     </LastCourseTitle>
 
-                    <ButtonContinue>
+                    <ButtonContinue onPress={()=>navigation.navigate('Detail',{item:lastCourse})}>
                         <ButtonContinueText>Continue</ButtonContinueText>
                         <Feather name="play-circle" color="#fff" size={15} />
                     </ButtonContinue>
@@ -65,7 +75,11 @@ const Main: React.FC = () => {
                         showsHorizontalScrollIndicator={false}
                     >
                         {data.filter(i=>!i?.last_view).map(item => (
-                            <TopCourseItem key={item.title} colorItem={item.background_color}>
+                            <TopCourseItem 
+                                key={item.title} 
+                                colorItem={item.background_color}
+                                onPress={()=>navigation.navigate('Detail', { item })}
+                            >
                                 <TopCourseItemText>
                                     {item.title}
                                 </TopCourseItemText>
