@@ -6,6 +6,7 @@ Projeto desenvolvido para praticar minhas habilidades React Native, flexbox, css
 <h1 align="center" class="teste">
   <img src="./images/img1.jpeg" width=250/>
   <img src="./images/img2.jpeg" width=250/>
+  <img src="./images/img3.jpeg" width=250/>
 </h1>
 
 
